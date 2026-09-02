@@ -1,0 +1,95 @@
+INTRODUCCIÓN A DJANGO
+
+Laboratorio de Algoritmos y Estructuras de Datos
+
+Nombre: Bertoglio Marcos Diego
+Curso: 4AO
+Fecha: 03/09/2026
+
+
+CUESTIONARIO
+
+1. ¿Qué es Django y por qué lo usaríamos?
+
+Django es un framework web desarrollado en Python que permite crear aplicaciones web de una manera organizada y rápida. Lo usaríamos porque proporciona herramientas ya preparadas para tareas habituales, como trabajar con bases de datos, manejar URLs, crear formularios, administrar usuarios y gestionar un sitio mediante un panel de administración. Esto permite concentrarnos en la lógica y las funciones de nuestra aplicación en lugar de construir todo desde cero.
+
+2. ¿Qué es el patrón MTV (Model-Template-View) en Django? (simplificado de MVC). Compará MTV con MVC.
+
+MTV es la forma en que Django organiza las distintas partes de una aplicación.
+El Model representa los datos y su estructura, además de permitir trabajar con la base de datos.
+El Template se ocupa de la presentación de la información que ve el usuario, principalmente mediante HTML.
+La View contiene la lógica que recibe una petición, obtiene o procesa los datos y devuelve una respuesta.
+Se puede comparar MTV con MVC porque ambos buscan separar las responsabilidades de una aplicación. En MVC, el Model representa los datos, la View representa la interfaz y el Controller maneja la lógica y las solicitudes. En Django, la View cumple gran parte del papel que suele tener el Controller, mientras que el Template se encarga de la presentación.
+
+3. ¿Qué entendemos por app en Django?
+
+Una app es una aplicación web que realiza una función concreta dentro de un proyecto Django. Por ejemplo, puede ser una aplicación de encuestas, un blog o un sistema de usuarios. Un proyecto puede tener varias apps y una misma app puede ser reutilizada en diferentes proyectos.
+
+4. ¿Qué es el flujo request-response en Django?
+
+Es el proceso que ocurre cuando un usuario solicita una página. Primero, el navegador realiza una request al servidor. Django analiza la URL solicitada y busca qué patrón coincide. Cuando encuentra el patrón correspondiente, ejecuta la view asociada.
+
+La view puede consultar la base de datos, procesar información y utilizar un template. Finalmente, Django devuelve una response, por ejemplo una página HTML, que el navegador muestra al usuario.
+
+5. ¿Qué es el concepto de ORM (Object-Relational Mapping)?
+
+ORM significa Object-Relational Mapping. Es una forma de trabajar con una base de datos utilizando objetos y clases de Python en lugar de escribir directamente todas las consultas SQL.
+
+En Django, los modelos se definen mediante clases y el ORM permite crear, consultar, modificar y eliminar datos utilizando código Python. Django se encarga de traducir esas operaciones a las instrucciones que necesita la base de datos.
+
+6. ¿Qué son los templates en Django?
+
+Los templates son archivos que se utilizan para definir cómo se presenta la información al usuario. Normalmente contienen HTML y pueden incluir variables, condiciones, ciclos y filtros.
+Las views pueden enviar datos al template mediante un contexto y el template utiliza esos datos para generar la página final que verá el usuario.
+
+7. Django at a glance
+
+Según la documentación oficial de Django, una aplicación puede comenzar definiendo modelos que representan la estructura de los datos. Luego, mediante las migraciones, Django puede crear o modificar las tablas correspondientes en la base de datos.
+El ORM permite trabajar con los objetos de los modelos desde Python. Django también proporciona un sistema de administración que permite gestionar los datos desde una interfaz web.
+Después se pueden definir las URLs mediante un URLconf, que relaciona las diferentes rutas con las views correspondientes. Las views procesan las solicitudes y pueden utilizar templates para generar las respuestas.
+Los templates permiten separar la presentación de la lógica de Python y también permiten reutilizar estructuras mediante la herencia de templates.
+(Django Software Foundation, 2026)
+
+8. ¿Cómo se lo instala?
+
+Para instalar Django primero es necesario tener Python instalado. Luego se puede instalar Django mediante pip utilizando el siguiente comando:
+python -m pip install Django
+Una vez instalado, se puede comprobar la versión de Django mediante:
+python -m django --version
+La documentación oficial indica que Django 6.1 requiere Python 3.12 o posterior. Para comenzar a trabajar también se puede utilizar SQLite, que es la base de datos utilizada por defecto en un proyecto nuevo de Django.
+
+(Django Software Foundation, 2026)
+
+
+REFERENCIAS
+
+
+Django Software Foundation. (2026). Django documentation: Django at a glance.
+https://docs.djangoproject.com/en/6.1/intro/overview/
+
+Django Software Foundation. (2026). Django documentation: Quick install guide.
+https://docs.djangoproject.com/en/6.1/intro/install/
+
+Django Software Foundation. (2026). Django documentation: Writing your first Django app, part 1.
+https://docs.djangoproject.com/en/6.1/intro/tutorial01/
+
+Django Software Foundation. (2026). Django documentation: Writing your first Django app, part 2.
+https://docs.djangoproject.com/en/6.1/intro/tutorial02/
+
+Django Software Foundation. (2026). Django documentation: Writing your first Django app, part 3.
+https://docs.djangoproject.com/en/6.1/intro/tutorial03/
+
+Django Software Foundation. (2026). Django documentation: Writing your first Django app, part 4.
+https://docs.djangoproject.com/en/6.1/intro/tutorial04/
+
+Django Software Foundation. (2026). Django documentation: Writing your first Django app, part 5.
+https://docs.djangoproject.com/en/6.1/intro/tutorial05/
+
+Django Software Foundation. (2026). Django documentation: Writing your first Django app, part 6.
+https://docs.djangoproject.com/en/6.1/intro/tutorial06/
+
+Django Software Foundation. (2026). Django documentation: Writing your first Django app, part 7.
+https://docs.djangoproject.com/en/6.1/intro/tutorial07/
+
+Django Software Foundation. (2026). Django documentation: Writing your first Django app, part 8.
+https://docs.djangoproject.com/en/6.1/intro/tutorial08/
