@@ -1,0 +1,17 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Polls</title>
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
+</head>
+<body>
+
+    <a href="{% url 'polls:index' %}">Inicio</a>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
